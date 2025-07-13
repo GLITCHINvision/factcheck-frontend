@@ -18,10 +18,11 @@ function App() {
     setIsTyping(true);
     setResult("");
     try {
-      const res = await axios.post("https://factcheck-backend-v2mt.onrender.com", {
+      const res = await axios.post("https://factcheck-backend-v2mt.onrender.com/fact-check", {
         query,
-        mode, 
-      });
+        mode,
+    });
+
       animateText(res.data.answer);
     } catch (error) {
       setResult(" Error fetching data. Please try again.");
