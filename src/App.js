@@ -18,13 +18,13 @@ function App() {
     setIsTyping(true);
     setResult("");
     try {
-      const res = await axios.post("http://localhost:5000/fact-check", {
+      const res = await axios.post("https://factcheck-backend-v2mt.onrender.com", {
         query,
         mode, 
       });
       animateText(res.data.answer);
     } catch (error) {
-      setResult("⚠️ Error fetching data. Please try again.");
+      setResult(" Error fetching data. Please try again.");
       setIsTyping(false);
     }
   };
