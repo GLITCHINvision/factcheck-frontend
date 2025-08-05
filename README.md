@@ -77,7 +77,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Open `http://localhost:3000` to use the chatbot locally.
+Open `https://factcheck-frontend.vercel.app/` to use the chatbot locally.
 
 ---
 
