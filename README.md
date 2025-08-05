@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# FactCheck Bot – AI-Powered Real-Time Fact Verification
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+FactCheck Bot is an AI-powered web chatbot that helps users verify the credibility of information in real time. It intelligently distinguishes between **factual** and **hallucinated** statements using advanced LLMs combined with reliable fact-checking APIs.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+##  Features
 
-### `npm start`
+-  **Real-Time Fact Verification**  
+  Instantly checks if a statement is factually accurate using external data sources and APIs.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-  **LLM + Verified Mode**  
+  Toggle between LLM-generated responses or verified-only responses from credible sources.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-  **Transformer-Powered**  
+  Uses models like Bloomz-560m or Falcon via Hugging Face for fast and lightweight response generation.
 
-### `npm test`
+-  **Hallucination Filtering**  
+  Reduces AI hallucinations by cross-verifying data with multiple trusted fact-checking APIs.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-  **Simple & Intuitive UI**  
+  Built using React for a clean user experience.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ⚙ Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Layer         | Technology                    |
+|---------------|-------------------------------|
+| Frontend      | React, Tailwind CSS           |
+| Backend       | Flask, Python, HuggingFace    |
+| APIs Used     | Fact-checking APIs (custom)   |
+| LLMs          | Bloomz-560m / Falcon (via Transformers) |
+| Hosting       | GitHub + (coming soon: Vercel/Render)  |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+##  Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+factcheck-bot/
+├── frontend/               # React + Tailwind-based UI
+│   └── src/
+│       ├── components/
+│       └── App.js
+├── backend/                # Flask backend with model and API integration
+│   ├── app.py
+│   └── fact_checker.py
+└── README.md
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+##  How to Run Locally
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Prerequisites
+- Node.js & npm
+- Python 3.9+
+- Hugging Face Transformers
+- Flask
 
-## Learn More
+### Steps
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+# Clone the repo
+git clone https://github.com/your-username/factcheck-bot.git
+cd factcheck-bot
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Run frontend
+cd frontend
+npm install
+npm run dev
 
-### Code Splitting
+# Run backend
+cd ../backend
+pip install -r requirements.txt
+python app.py
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Open `http://localhost:3000` to use the chatbot locally.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+##  Use Cases
 
-### Making a Progressive Web App
+- Verifying news or social media content
+- Helping students cross-check academic facts
+- Assisting journalists, researchers, and bloggers
+- Reducing misinformation in digital content
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+##  Future Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+-  Add memory/context window for better follow-up answers  
+-  Support multilingual fact-checking  
+-  Integrate user credibility score  
+-  Admin panel to add trusted sources manually
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+##  Contributing
 
-### `npm run build` fails to minify
+Pull requests and feedback are welcome! For major changes, please open an issue first to discuss what you’d like to change.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+##  License
+
+This project is licensed under the **MIT License**.
+
+---
+
+##  Author
+
+**Raman Sharma**  
+🔗 [GitHub](https://github.com/GLITCHINvision) | 🔗 [LinkedIn](https://www.linkedin.com/in/raman-sharma-71371024a/)
+
