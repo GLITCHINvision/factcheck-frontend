@@ -23,7 +23,7 @@ FactCheck Bot is an AI-powered web chatbot that helps users verify the credibili
 
 ---
 
-## ⚙ Tech Stack
+##  Tech Stack
 
 | Layer         | Technology                    |
 |---------------|-------------------------------|
@@ -31,7 +31,7 @@ FactCheck Bot is an AI-powered web chatbot that helps users verify the credibili
 | Backend       | Flask, Python, HuggingFace    |
 | APIs Used     | Fact-checking APIs (custom)   |
 | LLMs          | Bloomz-560m / Falcon (via Transformers) |
-| Hosting       | GitHub + (coming soon: Vercel/Render)  |
+| Hosting       | GitHub + Render  |
 
 ---
 
@@ -63,7 +63,7 @@ factcheck-bot/
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/factcheck-bot.git
+git clone https://github.com/GLITCHINvision/factcheck-bot.git
 cd factcheck-bot
 
 # Run frontend
