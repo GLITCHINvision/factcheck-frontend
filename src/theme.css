@@ -1,0 +1,55 @@
+:root {
+  /* Premium Dark Glass Palette */
+  --bg-primary: #050510;
+  --bg-secondary: #0a0a1f;
+  --bg-tertiary: #13132b;
+
+  /* Accents */
+  --accent-primary: #4d79ff;
+  /* Electric Blue */
+  --accent-secondary: #b300ff;
+  /* Deep Neon Purple */
+  --accent-tertiary: #00e0ff;
+  /* Cyan Cyan */
+  --success-color: #00ff9d;
+  --error-color: #ff3366;
+
+  /* Text */
+  --text-primary: #ffffff;
+  --text-secondary: #a3a3c2;
+  --text-muted: #666680;
+
+  /* Borders & Glass */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-highlight: rgba(255, 255, 255, 0.2);
+  --blur-amt: 16px;
+
+  /* Typography */
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Orbitron', sans-serif;
+  /* Keeping Orbitron for headers/brand */
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(77, 121, 255, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(179, 0, 255, 0.08) 0%, transparent 40%);
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+}
